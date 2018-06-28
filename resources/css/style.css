@@ -22,6 +22,12 @@ span {
   margin: auto 0;
 }
 
+.container {
+  display: flex;
+  width: 960px;
+  margin: 0 auto; /* aplied to #business and #footer, others don't need */
+}
+
 /* Banner */
 
 #banner {
@@ -33,7 +39,6 @@ span {
   background-image: url("../../resources/images/glasses-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid red;
 }
 
 /* Navegation */
@@ -44,12 +49,9 @@ a {
 }
 
 #navigation {
-  display: flex;
-  width: 960px;
   position: relative;
   top: 1rem;
   background-color: cadetblue;
-border: 1px solid blue;
 }
 
 #navigation img {
@@ -64,7 +66,6 @@ border: 1px solid blue;
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
-border: 1px solid white;
 }
 
 .mobile.navbar {
@@ -80,11 +81,8 @@ li {
 #headline {
   position: relative;
   top: 10rem;
-  display: flex;
-  width: 960px;
   justify-content: flex-end;
   text-transform: uppercase;
-border: 1px solid red;
 }
 
 .slogan {
@@ -96,7 +94,6 @@ border: 1px solid red;
   font-size: 2rem;
   line-height: 1.2rem;
   font-weight: bold;
-border: 1px solid blue;
 }
 
 /* Services */
@@ -107,7 +104,6 @@ border: 1px solid blue;
   height: 8rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-border: 1px solid blue;
 }
 
 .item {
@@ -116,10 +112,8 @@ align-items: center;
 justify-content: space-between;
 flex-direction: column;
 max-width: 5rem;
-border: 1px solid red;
 margin-right: 3rem;
 margin-left: 3rem;
-border: 1px solid red;
 }
 
 
@@ -130,7 +124,6 @@ p {
 
 .normal {
   max-width: 3.5rem;
-  border: 1px solid green;
 }
 
 .custom {
@@ -139,25 +132,15 @@ p {
 
 /* business */
 
-#business {
-  display: flex;
-  width: 960px;
-    margin: 0 auto; /* lo podría declarar en el universal, ojo que los otros no necesitan */
-border: 1px solid green;
-}
-
 .info {
   display: flex;
   justify-content: center;
-
-border: 1px solid red;
 }
 
 .content {
   display: block;
   margin: 0 2.5%;
   max-width: 35%;
-border: 1px solid aqua;
 }
 
 .title {
@@ -166,21 +149,15 @@ border: 1px solid aqua;
   background-color: cadetblue;
   color: white;
   text-align: left;
-
-border: 1px solid blue;
 }
 
 .text {
   text-align: left;
-border: 1px solid black;
 }
 
 /* footer */
 
 #footer {
-  display: flex;
-  width: 960px;
-  margin: 0 auto;
   background-color: azure;
   margin-top: 5rem;
 }
@@ -199,6 +176,7 @@ border: 1px solid black;
 /* ######################################### */
 
 @media only screen and (max-width: 1024px) {
+
   #banner {
     height: 22rem;
   }
@@ -221,7 +199,6 @@ border: 1px solid black;
   #business {
     width: 100%;
   }
-
 }
 
 @media only screen and (max-width: 850px) {
@@ -251,6 +228,7 @@ border: 1px solid black;
 }
 
 @media only screen and (max-width: 725px) {
+
   span {
     display: none;
   }
@@ -265,6 +243,7 @@ border: 1px solid black;
 }
 
 @media only screen and (max-width: 565px) {
+
   .navbar {
     display: none;
   }
@@ -330,7 +309,6 @@ border: 1px solid black;
   .copyright {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 245px) {
