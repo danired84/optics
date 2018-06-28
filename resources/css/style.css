@@ -1,0 +1,341 @@
+html {
+  box-sizing:
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: helvetica;
+  line-height: 1.4;
+}
+
+span {
+  color: white;
+  margin: auto 0;
+}
+
+/* Banner */
+
+#banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 30rem;
+  background-image: url("../../resources/images/glasses-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid red;
+}
+
+/* Navegation */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#navigation {
+  display: flex;
+  width: 960px;
+  position: relative;
+  top: 1rem;
+  background-color: cadetblue;
+border: 1px solid blue;
+}
+
+#navigation img {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  height: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+border: 1px solid white;
+}
+
+.mobile.navbar {
+  display: none;
+}
+
+li {
+  margin: 1rem 2rem;
+}
+
+/* Headline */
+
+#headline {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  width: 960px;
+  justify-content: flex-end;
+  text-transform: uppercase;
+border: 1px solid red;
+}
+
+.slogan {
+  position: relative;
+  left: 2rem;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  color: gray;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+border: 1px solid blue;
+}
+
+/* Services */
+
+.services {
+  display: flex;
+  justify-content: center;
+  height: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+border: 1px solid blue;
+}
+
+.item {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+max-width: 5rem;
+border: 1px solid red;
+margin-right: 3rem;
+margin-left: 3rem;
+border: 1px solid red;
+}
+
+
+p {
+  text-align: center;
+
+}
+
+.normal {
+  max-width: 3.5rem;
+  border: 1px solid green;
+}
+
+.custom {
+  max-width: 5rem;
+}
+
+/* business */
+
+#business {
+  display: flex;
+  width: 960px;
+    margin: 0 auto; /* lo podría declarar en el universal, ojo que los otros no necesitan */
+border: 1px solid green;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+
+border: 1px solid red;
+}
+
+.content {
+  display: block;
+  margin: 0 2.5%;
+  max-width: 35%;
+border: 1px solid aqua;
+}
+
+.title {
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  background-color: cadetblue;
+  color: white;
+  text-align: left;
+
+border: 1px solid blue;
+}
+
+.text {
+  text-align: left;
+border: 1px solid black;
+}
+
+/* footer */
+
+#footer {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+#footer img {
+  padding: 4rem 1rem 4rem 4rem;
+  height: 1.5rem;
+}
+
+.copyright {
+  padding: 4rem 0;
+  color: black;
+}
+
+/* ######################################### */
+/* ######################################### */
+
+@media only screen and (max-width: 1024px) {
+  #banner {
+    height: 22rem;
+  }
+  #navigation {
+    top: 0rem;
+    width: 100%;
+  }
+
+  #headline {
+    top: 5rem;
+    width: 100%;
+  }
+
+  .slogan {
+    left: -2rem;
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+
+  #business {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+.slogan {
+  position: static;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+  #headline {
+    top: 9rem;
+  }
+
+  #banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .title {
+    width: auto;
+    margin-right: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 725px) {
+  span {
+    display: none;
+  }
+
+  #headline {
+    top: 10rem;
+  }
+
+  .slogan {
+    padding: 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .navbar {
+    display: none;
+  }
+
+  .mobile.navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+
+    margin: 3.77rem 0;
+    height: auto;
+  }
+
+  .item {
+    font-size: 0.77rem;
+  }
+
+  .item.comprehensive, .item.fittings  {
+    margin-bottom: 1.54rem;
+  }
+
+  .info {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .content.one {
+    margin-bottom: 4rem;
+  }
+
+  .title {
+    padding: 0.5rem 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 0.77rem;
+  }
+
+  #footer {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #footer img {
+    padding: 4rem;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 245px) {
+
+  .slogan {
+    font-size: 0.5rem;
+  }
+}
