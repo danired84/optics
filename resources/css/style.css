@@ -226,6 +226,10 @@ p {
     margin-right: 2rem;
   }
 
+  .text {
+    font-size: 0.77rem;
+  }
+
 }
 
 @media only screen and (max-width: 725px) {
@@ -294,9 +298,7 @@ p {
     text-align: center;
   }
 
-  .text {
-    font-size: 0.77rem;
-  }
+
 
   #footer {
     justify-content: center;
